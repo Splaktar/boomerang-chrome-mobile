@@ -100,4 +100,9 @@ local.properties
 .texlipse
 
 # Cordova Files
-platforms/
+platforms/android/ant-build/
+platforms/android/ant-gen/
+platforms/android/CordovaLib/
+platforms/android/assets/www/app/
+platforms/android/assets/www/app/assets/
+platforms/android/assets/www/app/plugins/
