@@ -103,3 +103,4 @@ local.properties
 **/ant-build/
 **/ant-gen/
 **/assets/
+**/res/
