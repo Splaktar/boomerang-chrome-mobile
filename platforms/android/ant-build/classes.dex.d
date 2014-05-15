@@ -1,11 +1,12 @@
 /home/splaktar/Git/boomerang-chrome-mobile/platforms/android/ant-build/classes.dex : \
-/home/splaktar/Git/boomerang-chrome-mobile/platforms/android/ant-build/classes/com/your/company/HelloWorld/BuildConfig.class \
 /home/splaktar/Git/boomerang-chrome-mobile/platforms/android/ant-build/classes/com/your/company/HelloWorld/HelloWorld.class \
-/home/splaktar/Git/boomerang-chrome-mobile/platforms/android/ant-build/classes/com/your/company/HelloWorld/R$xml.class \
-/home/splaktar/Git/boomerang-chrome-mobile/platforms/android/ant-build/classes/com/your/company/HelloWorld/R$string.class \
-/home/splaktar/Git/boomerang-chrome-mobile/platforms/android/ant-build/classes/com/your/company/HelloWorld/R$drawable.class \
-/home/splaktar/Git/boomerang-chrome-mobile/platforms/android/ant-build/classes/com/your/company/HelloWorld/R$attr.class \
-/home/splaktar/Git/boomerang-chrome-mobile/platforms/android/ant-build/classes/com/your/company/HelloWorld/R.class \
+/home/splaktar/Git/boomerang-chrome-mobile/platforms/android/ant-build/classes/org/gdgspacecoast/BuildConfig.class \
+/home/splaktar/Git/boomerang-chrome-mobile/platforms/android/ant-build/classes/org/gdgspacecoast/HelloWorld.class \
+/home/splaktar/Git/boomerang-chrome-mobile/platforms/android/ant-build/classes/org/gdgspacecoast/R$xml.class \
+/home/splaktar/Git/boomerang-chrome-mobile/platforms/android/ant-build/classes/org/gdgspacecoast/R$string.class \
+/home/splaktar/Git/boomerang-chrome-mobile/platforms/android/ant-build/classes/org/gdgspacecoast/R$drawable.class \
+/home/splaktar/Git/boomerang-chrome-mobile/platforms/android/ant-build/classes/org/gdgspacecoast/R$attr.class \
+/home/splaktar/Git/boomerang-chrome-mobile/platforms/android/ant-build/classes/org/gdgspacecoast/R.class \
 /home/splaktar/Git/boomerang-chrome-mobile/platforms/android/ant-build/classes/org/chromium/ChromeStorage$3.class \
 /home/splaktar/Git/boomerang-chrome-mobile/platforms/android/ant-build/classes/org/chromium/ChromeBootstrap.class \
 /home/splaktar/Git/boomerang-chrome-mobile/platforms/android/ant-build/classes/org/chromium/ChromeStorage$5.class \
