@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/platforms/android/CordovaLib/CordovaLib.iml" filepath="$PROJECT_DIR$/platforms/android/CordovaLib/CordovaLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platforms/android/android.iml" filepath="$PROJECT_DIR$/platforms/android/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/org.apache.cordova.file/src/org.apache.cordova.file.iml" filepath="$PROJECT_DIR$/plugins/org.apache.cordova.file/src/org.apache.cordova.file.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/org.apache.cordova.inappbrowser/src/org.apache.cordova.inappbrowser.iml" filepath="$PROJECT_DIR$/plugins/org.apache.cordova.inappbrowser/src/org.apache.cordova.inappbrowser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/org.apache.cordova.network-information/src/org.apache.cordova.network-information.iml" filepath="$PROJECT_DIR$/plugins/org.apache.cordova.network-information/src/org.apache.cordova.network-information.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/org.chromium.bootstrap/src/org.chromium.bootstrap.iml" filepath="$PROJECT_DIR$/plugins/org.chromium.bootstrap/src/org.chromium.bootstrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/org.chromium.i18n/src/org.chromium.i18n.iml" filepath="$PROJECT_DIR$/plugins/org.chromium.i18n/src/org.chromium.i18n.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/org.chromium.navigation/src/org.chromium.navigation.iml" filepath="$PROJECT_DIR$/plugins/org.chromium.navigation/src/org.chromium.navigation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/org.chromium.storage/src/org.chromium.storage.iml" filepath="$PROJECT_DIR$/plugins/org.chromium.storage/src/org.chromium.storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/www/www.iml" filepath="$PROJECT_DIR$/www/www.iml" />
+    </modules>
+  </component>
+</project>
+
