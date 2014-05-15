@@ -1,6 +1,6 @@
 {
-  "name": "Hello World",
-  "description": "A Sample Chrome App",
+  "name": "GDG Space Coast",
+  "description": "GDG Space Coast Chrome mobile app.",
   "manifest_version": 2,
   "minimum_chrome_version": "23",
   "version": "0.1.1",

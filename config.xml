@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.your.company.HelloWorld" version="0.1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Hello World</name>
-    <description>A Sample Chrome App</description>
+<widget id="org.gdgspacecoast" version="0.1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>GDG Space Coast</name>
+    <description>GDG Space Coast Chrome mobile app.</description>
     <author />
     <preference name="KeyboardShrinksView" value="true" />
     <preference name="StatusBarOverlaysWebView" value="false" />
