@@ -111,8 +111,7 @@ boomerang.controller("NewsControl", function ($scope, $http, $resource, $timeout
                 html = html.join('');
                 $sce.trustAsHtml(html);
 
-//                actorImage = actor.image.url;
-                actorImage = '../images/gdg_loading.gif';
+                actorImage = actor.image.url;
                 actorImage = actorImage.substr(0, actorImage.length - 2) + '16';
 
                 entry = {
