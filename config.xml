@@ -9,5 +9,8 @@
     <preference name="iosPersistentFileLocation" value="Library" />
     <preference name="AndroidPersistentFileLocation" value="Internal" />
     <content src="plugins/org.chromium.bootstrap/chromeapp.html" />
+    <access origin="https://apis.google.com/*" />
+    <access origin="https://www.googleapis.com/*" />
+    <access origin="https://picasaweb.google.com/*" />
     <access origin="*" />
 </widget>

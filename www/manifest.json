@@ -22,6 +22,9 @@
     }
   },
   "permissions": [
-    "<all_urls>"
+      "https://apis.google.com/",
+      "https://www.googleapis.com/",
+      "https://picasaweb.google.com/",
+      "<all_urls>"
   ]
 }

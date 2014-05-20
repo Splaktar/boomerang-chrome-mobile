@@ -1,4 +1,4 @@
-var boomerang = angular.module('gdgBoomerang', ['ngSanitize', 'ngRoute', 'ui.bootstrap'])
+var boomerang = angular.module('gdgBoomerang', ['ngSanitize', 'ngRoute', 'ngResource', 'ui.bootstrap'])
     .config(function ($routeProvider, $locationProvider) {
 
         $locationProvider.hashPrefix('!');
@@ -18,14 +18,16 @@ boomerang.controller('MainControl', function ($scope, Config) {
     $scope.status = 'ready';
 });
 
-boomerang.controller('AboutControl', function ($scope, $http, Config) {
+boomerang.controller('AboutControl', function ($scope, $http, $sce, Config) {
     $scope.loading = true;
     $scope.$parent.activeTab = "about";
     $scope.cover = Config.cover;
-    $http.jsonp('https://www.googleapis.com/plus/v1/people/' + Config.id +
-        '?callback=JSON_CALLBACK&fields=aboutMe%2Ccover%2Cimage%2CplusOneCount&key=' + Config.google_api)
+    $http.get('https://www.googleapis.com/plus/v1/people/' + Config.id +
+        '?fields=aboutMe%2Ccover%2Cimage%2CplusOneCount&key=' + Config.google_api)
         .success(function (data) {
             $scope.desc = data.aboutMe;
+            $sce.trustAsHtml($scope.desc);
+
             if (data.cover && data.cover.coverPhoto.url) {
                 $scope.cover.url = data.cover.coverPhoto.url;
             }
@@ -39,11 +41,11 @@ boomerang.controller('AboutControl', function ($scope, $http, Config) {
         });
 });
 
-boomerang.controller("NewsControl", function ($scope, $http, $timeout, $filter, Config) {
+boomerang.controller("NewsControl", function ($scope, $http, $resource, $timeout, $filter, $sce, Config) {
     $scope.loading = true;
     $scope.$parent.activeTab = "news";
-    $http.jsonp('https://www.googleapis.com/plus/v1/people/' + Config.id +
-            '/activities/public?callback=JSON_CALLBACK&maxResults=20&key=' + Config.google_api)
+    $http.get('https://www.googleapis.com/plus/v1/people/' + Config.id +
+            '/activities/public?maxResults=20&key=' + Config.google_api)
         .success(function (response) {
             var entries = [], i, j, k;
             var item, actor, object, itemTitle, html, thumbnails, attachments, attachment;
@@ -107,6 +109,7 @@ boomerang.controller("NewsControl", function ($scope, $http, $timeout, $filter, 
                 }
 
                 html = html.join('');
+                $sce.trustAsHtml(html);
 
 //                actorImage = actor.image.url;
                 actorImage = '../images/gdg_loading.gif';
@@ -168,10 +171,8 @@ boomerang.controller("PhotosControl", function ($scope, $http, Config) {
     $scope.$parent.activeTab = "photos";
     $scope.photos = [];
 
-    var pwa = 'https://picasaweb.google.com/data/feed/api/user/' + Config.id + '/albumid/' + Config.pwa_id +
-        '?access=public&alt=json-in-script&kind=photo&max-results=50&fields=entry(title,link/@href,summary,content/@src)&v=2.0&callback=JSON_CALLBACK';
-
-    $http.jsonp(pwa)
+    $http.get('https://picasaweb.google.com/data/feed/api/user/' + Config.id + '/albumid/' + Config.pwa_id +
+              '?access=public&alt=json&kind=photo&max-results=50&fields=entry(title,link/@href,summary,content/@src)&v=2.0')
         .success(function (d) {
             var p = d.feed.entry;
             for (var x in p) {
